@@ -17,6 +17,7 @@ body{
     text-transform: uppercase;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 40px;
+    margin-bottom: 20px;
     font-size: 60px;
     color: white;
 }
@@ -54,7 +55,9 @@ header{
     margin-right: 20px;
 }
 
-.item_lista{
+.lista__a{
+    text-decoration: none;
+    color: white;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #050709;
@@ -62,10 +65,11 @@ header{
     border-radius: 4px;
 }
 
-.item_lista:hover{
-    background-color: #cbe200;
+.lista__a:hover{
     color: black;
+    background-color: #cbe200;
 }
+
 
 .planos{
     display: flex;
@@ -76,10 +80,15 @@ header{
 
 .cards{
     background-color: #20262c;
-    flex-grow: 1;
-    padding: 70px;
-    border-radius: 7px;
     color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex-grow: 1;
+    padding: 30px;
+    border-radius: 7px;
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .cards__a{
@@ -89,6 +98,39 @@ header{
 
 .cards__namePlans{
     text-transform: uppercase;
-    border-bottom:2px solid #cbe200;
-    margin-top: 0px;
+    border-bottom: 3px solid #cbe200;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.estilo__preco{
+    font-size: 34px;
+}
+
+.cards__lista{
+    margin: 25px 0px 70px 18px;
+    flex-grow: 1;
+}
+
+.cards__lista_item{
+    color: #b5b5b5;
+    margin-top: 8px;
+}
+
+.cards__cta{
+    padding: 10px;
+    background-color: #cbe300;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.cards__cta:hover{
+    color: #050709;
 }
